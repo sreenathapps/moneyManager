@@ -157,13 +157,17 @@ class MoneyManager extends Component {
           <div className="items-display-container">
             <h1 className="form-heading">History</h1>
             <li className="transaction-row">
-              <h1 className="h1">Title</h1>
-              <h1 className="h1">Amount</h1>
-              <h1 className="h1">Type</h1>
+              <p className="h1">Title</p>
+              <p className="h1">Amount</p>
+              <p className="h1">Type</p>
               <p>{` `}</p>
             </li>
             {items.map(each => (
-              <TransactionItem item={each} handleDelete={this.handleDelete} />
+              <TransactionItem
+                key={each.id}
+                item={each}
+                handleDelete={this.handleDelete}
+              />
             ))}
           </div>
         </div>

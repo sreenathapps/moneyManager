@@ -8,9 +8,9 @@ const TransactionItem = props => {
     <li className="transaction-row">
       <p>{title}</p>
       <p>{amount}</p>
-      <p>{type}</p>
+      <p className="type">{type}</p>
       <p>
-        <button className="delete-btn" type="button">
+        <button data-testid="delete" className="delete-btn" type="button">
           <img
             src="https://assets.ccbp.in/frontend/react-js/money-manager/delete.png"
             alt="delete"

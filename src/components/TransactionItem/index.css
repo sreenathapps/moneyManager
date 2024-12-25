@@ -22,3 +22,6 @@
 p {
   min-width: 80px;
 }
+.type {
+  text-transform: capitalize;
+}

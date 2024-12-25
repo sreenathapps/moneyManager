@@ -47,7 +47,7 @@ class MoneyManager extends Component {
     const newTransaction = {
       id: uuidv4(),
       title,
-      amount: parseFloat(amount),
+      amount: parseFloat(amount) || 0,
       type,
     }
 
@@ -126,7 +126,7 @@ class MoneyManager extends Component {
               AMOUNT
             </label>
             <input
-              type="text"
+              type="number"
               id="amount"
               className="input-el"
               placeholder="Amount"

@@ -6,9 +6,9 @@ const TransactionItem = props => {
 
   return (
     <li className="transaction-row">
-      <p>{title}</p>
-      <p>{amount}</p>
-      <p className="type">{type}</p>
+      <p className="p">{title}</p>
+      <p className="p">{amount}</p>
+      <p className="p type">{type.toLowerCase()}</p>
       <p>
         <button data-testid="delete" className="delete-btn" type="button">
           <img
